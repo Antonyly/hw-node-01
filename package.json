@@ -1,0 +1,31 @@
+{
+  "name": "hw-node-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node contacts",
+    "start:dev": "nodemod contacts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antonyly/hw-node-01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antonyly/hw-node-01/issues"
+  },
+  "homepage": "https://github.com/Antonyly/hw-node-01#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nanoid": "^3.3.4"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20"
+  }
+}
