@@ -1,11 +1,20 @@
-// const contacts= require("./contacts");
-// const contactsPath = ;
+// const fs = require("fs/promises");
+
+// const contactsPath = `${__dirname}/contacts.json`;
 
 
-// TODO: задокументировать каждую функцию
-function listContacts() {
-  // ...твой код
-}
+
+// function listContacts() {
+//   const data = fs.readFile(contactsPath, "utf-8");
+
+//   return JSON.parse(data);
+// }
+// const listContacts = async() => {
+//   const data = fs.readFile(contactsPath, "utf-8");
+  
+//   return JSON.parse(data);
+// }
+console.log("lox")
 
 // function getContactById(contactId) {
 //   // ...твой код
@@ -21,10 +30,10 @@ function listContacts() {
 
 // console.log("Hello world");
 
-module.exports = {
-    listContacts,
-    // getContactById,
-    // removeContact,
-    // addContact
-};
+// module.exports = {
+//     listContacts,
+//     // getContactById,
+//     // removeContact,
+//     // addContact
+// };
 
