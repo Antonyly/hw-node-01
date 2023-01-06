@@ -1,23 +1,39 @@
-// const fs = require("fs/promises");
+const fs = require("fs/promises");
+const path = require("path");
 
-// const contactsPath = `${__dirname}/contacts.json`;
+const contactsPath = path.join(__dirname, "./db/contacts.json");
 
+const listContacts = async() => {
+ const data = await fs.readFile(contactsPath)
+ return JSON.parse(data)
+}
 
+// const getContactById = async(id) => {
+//     const contacts = await listContacts();
+//     const result = contacts.find(item => item.id === id.toString())
 
-// function listContacts() {
-//   const data = fs.readFile(contactsPath, "utf-8");
-
-//   return JSON.parse(data);
+//     return result || null
 // }
-// const listContacts = async() => {
-//   const data = fs.readFile(contactsPath, "utf-8");
-  
-//   return JSON.parse(data);
-// }
-console.log("lox")
 
-// function getContactById(contactId) {
-//   // ...твой код
+module.exports = {
+    listContacts,
+    // getContactById,
+    // removeContact,
+    //  addContact
+}
+
+// function getById(id) {
+//   const contact = listContacts();
+//   const result = contact.find(el => el.id === id)
+
+//   return result || null;
+// }
+// const getContactById = async(id) => {
+//   const contacts = await listContacts();
+//   // const result = contacts.find(item => item.id === id);
+//   const result = contacts.includes(item => item.id === id )
+
+//   return result;
 // }
 
 // function removeContact(contactId) {
@@ -27,13 +43,3 @@ console.log("lox")
 // function addContact(name, email, phone) {
 //   // ...твой код
 // }
-
-// console.log("Hello world");
-
-// module.exports = {
-//     listContacts,
-//     // getContactById,
-//     // removeContact,
-//     // addContact
-// };
-
