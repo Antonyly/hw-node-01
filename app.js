@@ -23,29 +23,17 @@
 const contacts = './db/contacts.js';
 
 const invokeAction = async ({ action, id, name, email, phone }) => {
-    switch (action) {
-      case "list":
-        const allContacts = await contacts.listContacts();
-        console.log(allContacts)
-        break;
-  
-    //   case "get":
-    //     const contactId = await contacts.getContactById(id);
-    //     console.log('contact id: ' , contactId)
-    //     break;
-  
-    //   case "add":
-    //     // ... name email phone
-    //     break;
-  
-    //   case "remove":
-    //     // ... id
-    //     break;
-  
-      default:
-        console.warn("\x1B[31m Unknown action type!");
-    }
-  }
+  switch (action) {
+      
+    case "list":
+      const allContacts = await contacts.listContacts();
+      console.log(allContacts)
+      break;
+      
+    default:
+      console.log("Unknown action");
+  };
+};
 
 invokeAction({ action: "list"});
 //  invokeAction({ action: "get", id: 1});
