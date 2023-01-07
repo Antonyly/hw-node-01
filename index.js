@@ -36,9 +36,3 @@ program.parse(process.argv);
 const argv = program.opts();
 
 invokeAction(argv);
-
-// invokeAction({action: "list"});
-// invokeAction({ action: "getById", id: "2" });
-// invokeAction({ action: "removeById", id: "9" });
-// invokeAction({action: "add", name: "Alec Howard", email: "Donec.elementum@scelerisquescelerisquedui.net", phone: "(748) 206-2688"});
-
