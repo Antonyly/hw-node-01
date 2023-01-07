@@ -1,31 +1,25 @@
 {
-  "name": "hw-node-01",
+  "name": "goit-hw-01",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app",
-    "start:dev": "nodemon app"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Antonyly/hw-node-01.git"
+    "start": "node index",
+    "start:dev": "nodemon index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Antonyly/hw-node-01/issues"
+  "dependencies": {
+    "commander": "^9.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nanoid": "^3.3.4",
+    "yargs": "^17.6.2"
   },
-  "homepage": "https://github.com/Antonyly/hw-node-01#readme",
   "devDependencies": {
     "jest": "^29.3.1",
     "nodemon": "^2.0.20"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "nanoid": "^3.3.4"
   }
 }
